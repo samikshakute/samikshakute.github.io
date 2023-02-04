@@ -3,6 +3,10 @@ body {
      font-family: 'Open Sans', sans-serif;
      background-color:rgb(51, 50, 50)
 }
+h2{
+     color: white;
+     text-align: center;
+}
 .navbar {
      background: rgb(57, 57, 57);
      max-width: 870px;
