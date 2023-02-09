@@ -4,6 +4,10 @@ body {
   font-family: "Public Sans", sans-serif;
   background-color: rgb(51, 50, 50);
 }
+h2{
+     color: white;
+     text-align: center;
+}
 .navbar {
   background: rgb(57, 57, 57);
   max-width: 800px;
@@ -21,6 +25,7 @@ body {
   background-color: rgb(40, 50, 50);
 }
 .navbar-brand {
+<<<<<<< HEAD
   font-weight: 400;
   padding-right: 20rem;
 }
@@ -80,4 +85,9 @@ p {
 .links > a > i:hover {
   background-color: rgb(193, 142, 32);
   color: #2e2e2d;
+=======
+     font-size: 1.2rem;
+     font-weight: 400;
+     padding-right: 25rem;
+>>>>>>> cda80d0f671bd4f19bf100ac5e166e9eea7699ae
 }
