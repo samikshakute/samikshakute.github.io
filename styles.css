@@ -25,7 +25,6 @@ h2{
   background-color: rgb(40, 50, 50);
 }
 .navbar-brand {
-<<<<<<< HEAD
   font-weight: 400;
   padding-right: 20rem;
 }
@@ -40,8 +39,7 @@ h2 {
   margin: 10rem auto auto 30rem;
   width: 100%;
 }
-.heading h2,
-p {
+.heading h2, p {
   margin-bottom: 0;
 }
 .heading img {
@@ -85,9 +83,4 @@ p {
 .links > a > i:hover {
   background-color: rgb(193, 142, 32);
   color: #2e2e2d;
-=======
-     font-size: 1.2rem;
-     font-weight: 400;
-     padding-right: 25rem;
->>>>>>> cda80d0f671bd4f19bf100ac5e166e9eea7699ae
 }
