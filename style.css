@@ -1,0 +1,301 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0e0e0;
+  color: #333333;
+  
+  background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
+                    linear-gradient(to right, #fffdfd 80%, transparent 120%);
+  background-size: 20px 20px; /* Adjust the size of the dots */
+  
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: transparent;
+  margin: 20px;
+}
+
+
+
+.content {
+  background-color: #F0F5FF;
+  /* Light Blue */
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin: 0 auto;
+  /* Adjust the width as needed */
+  text-align: center;
+  position: relative;
+  overflow: auto;
+}
+
+img {
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 50%;
+  box-shadow: #444;
+}
+
+
+.toggle-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.toggle-container i {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.heading {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  text-align: center;
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.heading:hover {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  align-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  flex: 0 0 calc(30% - 20px);
+  margin: 10px 0;
+  padding: 10px;
+  height: 250px;
+  border: 1px solid #000000;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item i {
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.socialmedia {
+  margin: 15px;
+}
+
+.socialmedia>a>i {
+  padding: 15px;
+  margin: 0px 5px;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+
+.socialmedia>a>i:hover {
+  background-color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fa-github:hover {
+  color: #ffffff;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #fff;
+  color: #ffffff;
+  background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
+                    linear-gradient(to right, #333333 80%, transparent 120%);
+  background-size: 20px 20px; /* Adjust the size of the dots */
+}
+
+body.dark-mode .content {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .heading {
+  border-color: #ffffff;
+  background-color: #666;
+  color: #fff;
+}
+
+body.dark-mode img {
+  border: solid 1px rgb(255, 255, 255);
+}
+
+body.dark-mode img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ... previous dark mode styles ... */
+
+body.dark-mode .item:nth-child(1) {
+  background-color: #af972e;
+  color: #ffffff;
+}
+
+body.dark-mode .item:nth-child(2) {
+  background-color: #5E944D;
+  color: #ffffff;
+}
+
+body.dark-mode .item:nth-child(3) {
+  background-color: #5E7EB0;
+  color: #ffffff;
+}
+
+body.dark-mode .item:nth-child(4) {
+  background-color: #D8775A;
+  color: #ffffff;
+}
+
+body.dark-mode .item:nth-child(5) {
+  background-color: #7A6FA4;
+  color: #ffffff;
+}
+
+body.dark-mode .item:nth-child(6) {
+  background-color: #D1963E;
+  color: #ffffff;
+}
+
+body.dark-mode .heading:hover {
+  box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .item {
+  border-color: #ffffff;
+  background-color: #666;
+}
+
+body.dark-mode .item:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .item i {
+  color: #ffffff;
+}
+
+body.dark-mode .socialmedia>a>i {
+  color: #ffffff;
+}
+
+body.dark-mode .fa-github:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+body.dark-mode .fa-linkedin:hover {
+  color: #0077B5;
+}
+
+/* ... rest of the CSS code ... */
+
+
+/* Apply impactful light colors to each item */
+.item:nth-child(1) {
+  background-color: #FFE082;
+  color: #333333;
+}
+
+.item:nth-child(2) {
+  background-color: #87d08b;
+  color: #333333;
+}
+
+.item:nth-child(3) {
+  background-color: #90CAF9;
+  color: #333333;
+}
+
+.item:nth-child(4) {
+  background-color: #FFAB91;
+  color: #333333;
+}
+
+.item:nth-child(5) {
+  background-color: #B39DDB;
+  color: #333333;
+}
+
+.item:nth-child(6) {
+  background-color: #FFCC80;
+  color: #333333;
+}
+
+/* ... previous CSS code ... */
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1500px) {
+  .content {
+    width: 90%;
+  }
+
+  .item {
+    flex: 0 0 calc(40% - 20px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+
+  .item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}

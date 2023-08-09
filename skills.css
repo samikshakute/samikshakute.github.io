@@ -1,0 +1,224 @@
+body {
+     margin: 0;
+     font-family: 'Poppins', sans-serif;
+     background-color: #e0e0e0;
+     color: #333333;
+
+     background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
+          linear-gradient(to right, #fffdfd 80%, transparent 120%);
+     background-size: 20px 20px;
+     /* Adjust the size of the dots */
+
+}
+
+page {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: transparent;
+     margin: 20px;
+}
+
+
+
+.content {
+     background-color: #F0F5FF;
+     /* Light Blue */
+     border-radius: 10px;
+     padding: 25px;
+     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+     max-width: 1000px;
+     margin: 0 auto;
+     /* Adjust the width as needed */
+     text-align: center;
+     position: relative;
+     overflow: auto;
+}
+
+
+.toggle-container {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     z-index: 1000;
+}
+
+.toggle-container i {
+     font-size: 24px;
+     cursor: pointer;
+     transition: color 0.3s;
+}
+
+.heading {
+     margin: 20px 0;
+     padding: 10px;
+     border: 2px solid rgb(0, 0, 0);
+     border-radius: 5px;
+     text-align: center;
+     background-color: #333333;
+     color: #FFFFFF;
+}
+
+.heading:hover {
+     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.skills {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     margin-top: 20px;
+     align-content: center;
+     align-items: center;
+}
+
+.skill {
+     flex: 0 0 calc(20% - 20px);
+     /* Half the available width with some spacing */
+     margin: 10px 0;
+     padding: 10px;
+     border: 1px solid #000000;
+     background-color: #f5f5f5;
+     border-radius: 5px;
+     text-align: center;
+     transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.item-link {
+     text-decoration: none;
+     color: inherit;
+}
+
+.skill-icon {
+     font-size: 36px;
+     color: #000000;
+     transition: transform 0.3s, color 0.3s;
+     margin-bottom: 10px;
+}
+
+.skill-icon:hover {
+     transform: scale(1.2);
+     color: #191919;
+}
+
+
+.skill-name {
+     font-size: 16px;
+     color: #000000;
+     margin: 0;
+}
+
+.socialmedia {
+     margin: 15px;
+}
+
+.socialmedia>a>i {
+     padding: 15px;
+     margin: 0px 5px;
+     border-radius: 50px;
+     color: rgb(0, 0, 0);
+     font-size: 25px;
+     transition: all 0.5s ease;
+}
+
+.socialmedia>a>i:hover {
+     background-color: #000000;
+}
+
+.fa-github:hover {
+     color: #ffffff;
+}
+
+.fa-twitter:hover {
+     color: #1DA1F2;
+}
+
+.fa-linkedin:hover {
+     color: #0077B5;
+}
+
+a {
+     text-decoration: none;
+     color: #000000;
+}
+
+body.dark-mode {
+     background-color: #fff;
+     color: #ffffff;
+     background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
+          linear-gradient(to right, #333333 80%, transparent 120%);
+     background-size: 20px 20px;
+     /* Adjust the size of the dots */
+}
+
+body.dark-mode .skill {
+     background-color: #727272;
+}
+
+body.dark-mode .skill-name {
+     color: #ffffff;
+}
+
+body.dark-mode .content {
+     background-color: #444;
+     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .heading {
+     border-color: #ffffff;
+     background-color: #666;
+     color: #fff;
+}
+
+
+body.dark-mode .heading:hover {
+     box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+body.dark-mode .skill-icon {
+     color: #ffffff;
+}
+
+body.dark-mode .socialmedia>a>i {
+     color: #ffffff;
+}
+
+body.dark-mode .fa-github:hover {
+     color: #ffffff;
+}
+
+body.dark-mode .fa-twitter:hover {
+     color: #1DA1F2;
+}
+
+body.dark-mode .fa-linkedin:hover {
+     color: #0077B5;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1500px) {
+     .content {
+          width: 90%;
+     }
+
+     .skill {
+          flex: 0 0 calc(50% - 20px);
+          /* Adjust the flex basis for two projects per row */
+     }
+}
+
+/* Additional Media Query for smaller screens, if needed */
+@media (max-width: 768px) {
+     .content {
+          width: 100%;
+     }
+
+     .skill {
+          flex: 0 0 calc(100% - 20px);
+          /* Adjust the flex basis for single project per row */
+     }
+}

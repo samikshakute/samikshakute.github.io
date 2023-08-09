@@ -1,37 +1,100 @@
 <!DOCTYPE html>
-
 <html lang="en">
-     
-     <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="description" content="Samiksha Kute Portfolio">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="styles.css">
-          <link rel="icon" href="images/circular_image.jpg" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Samiksha Kute's Portfolio" />
+    <!-- Add a meta description -->
+    <link rel="icon" href="images/circular_image.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-          <title>Projects | Samiksha Kute</title>
-     </head>
+    <link rel="stylesheet" href="projects.css" />
+    <title>Samiksha Kute - Projects</title>
+  </head>
 
-     <body>
-          <div class="nav">
-               <p>SAMIKSHA</p>
-               <div class="pages">
-                    <span class="page-item"> <a href="index.html">Home</a></span>
-                    <span class="page-item"> <a href="https://bio.link/samikshakute">Connect</a></span>
-                    <span class="page-item"> <a href="https://samikshakute.hashnode.dev/">Blog</a></span>
+
+  <body>
+    <div class="page">
+      <div class="content">
+        <div class="toggle-container">
+          <i class="fas fa-sun" id="mode-toggle"></i>
+        </div>
+        <a href="index.html">
+          <div class="heading">
+            <h1>Samiksha Kute</h1>
+            <p>Check out some of the exciting projects I've worked on.</p>
+          </div>
+        </a>
+        <div class="projects">
+          <div class="project">
+               <img src="images/sample.jpeg" alt="Project 1">
+               <h2>Project 1</h2>
+               <p>Description of Project 1 goes here.</p>
+               <div class="buttons">
+                   <a href="project1-demo" class="btn">View Project</a>
+                   <a href="project1-repo" class="btn">GitHub Repository</a>
                </div>
           </div>
-          <p style="color:white;text-align: center;">This page is under construction!</p>
-          <!------SOCIAL------>
-          <div class="footer">
-               <p id="footer-copy">Copyright © 2023 Samiksha Kute</p>
+       
+           <div class="project">
+               <img src="images/sample.jpeg" alt="Project 2">
+               <h2>Project 2</h2>
+               <p>Description of Project 2 goes here.</p>
+               <div class="buttons">
+                   <a href="project2-demo" class="btn">View Project</a>
+                   <a href="project2-repo" class="btn">GitHub Repository</a>
+               </div>
           </div>
-</body>
+
+           <div class="project">
+               <img src="images/sample.jpeg" alt="Project 1">
+               <h2>Project 1</h2>
+               <p>Description of Project 1 goes here.</p>
+               <div class="buttons">
+                   <a href="project1-demo" class="btn">View Project</a>
+                   <a href="project1-repo" class="btn">GitHub Repository</a>
+               </div>
+          </div>
+       
+           <div class="project">
+               <img src="images/sample.jpeg" alt="Project 2">
+               <h2>Project 2</h2>
+               <p>Description of Project 2 goes here.</p>
+               <div class="buttons">
+                   <a href="project2-demo" class="btn">View Project</a>
+                   <a href="project2-repo" class="btn">GitHub Repository</a>
+               </div>
+          </div>
+        </div>
+        <button
+          onclick="window.location.href='https://github.com/samikshakute';"
+        >
+          More Projects
+        </button>
+
+        <div class="socialmedia">
+          <a href="https://github.com/samikshakute"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/samikshakute"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/samikshakute"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

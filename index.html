@@ -1,50 +1,109 @@
 <!DOCTYPE html>
-
 <html lang="en">
-     
-     <head>
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="description" content="Samiksha Kute Portfolio">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="styles.css">
-          <link rel="icon" href="images/circular_image.jpg" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Samiksha Kute's Portfolio" />
 
-          <title>Samiksha Kute</title>
-     </head>
+    <link rel="icon" href="images/circular_image.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-     <body>
-          <div class="nav">
-               <p>SAMIKSHA</p>
-               <div class="pages">
-                    <span class="page-item"> <a href="index.html">Home</a></span>
-                    <span class="page-item"> <a href="projects.html">Projects</a></span>
-                    <span class="page-item"> <a href="https://samikshakute.hashnode.dev/">Blog</a></span>
-               </div>
-          </div>
+    <link rel="stylesheet" href="style.css" />
+    <title>Samiksha Kute</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="content">
+        <div class="toggle-container">
+          <i class="fas fa-sun" id="mode-toggle"></i>
+        </div>
+        <div class="profile-image">
+          <img src="images/circular_image.jpg" />
+        </div>
+
+        <a href="index.html">
           <div class="heading">
-               <div class="left">
-                    <h2> Hello, I'm <span class='samiksha'>Samiksha Kute</span></h2>
-                    <p>A passionate learner and an Open Source enthusiast.</p>
-                    <div class="socialmedia">
-                         <a href="https://github.com/samikshakute"><i class="fa-brands fa-github"></i></a>
-                         <a href="https://twitter.com/samikshakute"><i class="fa-brands fa-twitter"></i></a>
-                         <a href="https://www.linkedin.com/in/samikshakute"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-               </div>
-               <div class="right">
-                    <img src="images/circular_image.jpg">
-               </div>
+            <h1>Hello, I'm Samiksha Kute 👋</h1>
+            <p>A passionate learner and an Open Source enthusiast.</p>
           </div>
-          <!------SOCIAL------>
-          <div class="footer">
-               <p id="footer-copy">Copyright © 2023 Samiksha Kute</p>
+        </a>
+
+        <div class="items">
+          <div class="item">
+            <h2>My Projects</h2>
+            <i class="fa-solid fa-code"></i>
+            <p>Check out some of the exciting projects I've worked on.</p>
+            <a href="projects.html" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-</body>
+          <div class="item">
+            <h2>My Skills</h2>
+            <i class="fa-solid fa-gear"></i>
+            <p>Here are some of the skills I've acquired.</p>
+            <a href="skills.html" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="item">
+            <h2>My Certifications</h2>
+            <i class="fa-solid fa-award"></i>
+            <p>Here are some of the certifications I've earned.</p>
+            <a href="certifications.html" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <div class="item">
+            <h2>My Blogs</h2>
+            <i class="fa-brands fa-hashnode"></i>
+            <p>Explore my writings on various topics.</p>
+            <a href="https://samikshakute.hashnode.dev" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <div class="item">
+            <h2 class="logo">My Experience</h2>
+            <i class="fa-solid fa-user-tie"></i>
+            <p>Learn about my professional journey.</p>
+            <a href="experience.html" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+          <!-- <div class="item">
+            <h2>My Achievements</h2>
+            <i class="fa-solid fa-trophy logo"></i>
+            <p>Recognitions and accomplishments.</p>
+            <a href="achievements.html" class="item-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div> -->
+        </div>
+
+        <div class="socialmedia">
+          <a href="https://github.com/samikshakute"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://twitter.com/samikshakute"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/samikshakute"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
