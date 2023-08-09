@@ -3,11 +3,12 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #e0e0e0;
   color: #333333;
-  
+
   background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
-                    linear-gradient(to right, #fffdfd 80%, transparent 120%);
-  background-size: 20px 20px; /* Adjust the size of the dots */
-  
+    linear-gradient(to right, #fffdfd 80%, transparent 120%);
+  background-size: 20px 20px;
+  /* Adjust the size of the dots */
+
 }
 
 .page {
@@ -74,40 +75,57 @@ img {
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 20px;
-  align-content: center;
-  align-items: center;
 }
 
 .item {
   position: relative;
-  flex: 0 0 calc(30% - 20px);
+  flex: 0 0 calc(25% - 20px);
   margin: 10px 0;
   padding: 10px;
-  height: 250px;
   border: 1px solid #000000;
   background-color: #f5f5f5;
   border-radius: 5px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  overflow: hidden;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  display: flex;
+  flex-direction: column;
 }
 
-.item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.item-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.item h2 {
+  font-size: 1rem; /* Adjust font size as needed */
+  margin-top: 10px;
+}
+
+.item p {
+  font-size: 0.9rem; /* Adjust font size as needed */
+}
+
+.item i {
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-top: 15px;
+}
+
+
+
+
 
 .item-link {
+  margin-top: auto;
   text-decoration: none;
   color: inherit;
 }
 
-.item i {
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  color: #000000;
-  cursor: pointer;
-}
+/* ... previous styles ... */
 
 .socialmedia {
   margin: 15px;
@@ -149,8 +167,9 @@ body.dark-mode {
   background-color: #fff;
   color: #ffffff;
   background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
-                    linear-gradient(to right, #333333 80%, transparent 120%);
-  background-size: 20px 20px; /* Adjust the size of the dots */
+    linear-gradient(to right, #333333 80%, transparent 120%);
+  background-size: 20px 20px;
+  /* Adjust the size of the dots */
 }
 
 body.dark-mode .content {
@@ -271,22 +290,14 @@ body.dark-mode .fa-linkedin:hover {
   color: #333333;
 }
 
-/* ... previous CSS code ... */
-
 /* Media Queries for Responsive Design */
-@media (max-width: 1500px) {
+@media (max-width: 1160px) {
   .content {
     width: 90%;
   }
 
   .item {
-    flex: 0 0 calc(40% - 20px);
-  }
-}
-
-@media (max-width: 1024px) {
-  .content {
-    width: 95%;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust to 33.33% for three items in a row */
   }
 }
 
@@ -296,6 +307,20 @@ body.dark-mode .fa-linkedin:hover {
   }
 
   .item {
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 20px); /* Adjust to 50% for two items in a row */
+  }
+  
+  .item h2 {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+
+  .item p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .item i {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 }
+
+
