@@ -3,15 +3,13 @@ body {
      font-family: 'Poppins', sans-serif;
      background-color: #e0e0e0;
      color: #333333;
-
+     overflow-x: hidden;
      background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
           linear-gradient(to right, #fffdfd 80%, transparent 120%);
      background-size: 20px 20px;
-     /* Adjust the size of the dots */
-
 }
 
-page {
+.page {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -20,22 +18,18 @@ page {
      margin: 20px;
 }
 
-
-
 .content {
      background-color: #F0F5FF;
      /* Light Blue */
+     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
      border-radius: 10px;
      padding: 25px;
-     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
      max-width: 1000px;
      margin: 0 auto;
-     /* Adjust the width as needed */
      text-align: center;
      position: relative;
      overflow: auto;
 }
-
 
 .toggle-container {
      position: absolute;
@@ -61,7 +55,7 @@ page {
 }
 
 .heading:hover {
-     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+     box-shadow: -5px 8px 2px rgba(0, 0, 0, 1);
 }
 
 .projects {
@@ -75,29 +69,31 @@ page {
 
 .project {
      flex: 0 0 calc(40% - 20px);
-     /* Half the available width with some spacing */
      margin: 10px 0;
      padding: 10px;
      border: 2px solid #000000;
      background-color: #f5f5f5;
      border-radius: 5px;
      text-align: center;
+     box-sizing: border-box;
+     overflow: hidden;
      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.project:hover {
+     transform: translateY(-5px);
+     box-shadow: -5px 8px 2px rgba(0, 0, 0, 1);
 }
 
 .project img {
      width: 100%;
-     /* Image width fills the project container */
      object-fit: cover;
-     /* Maintain aspect ratio and cover container */
 }
 
 .item-link {
      text-decoration: none;
      color: inherit;
 }
-
-
 
 .socialmedia {
      margin: 15px;
@@ -149,9 +145,6 @@ button:hover {
      background-color: #000000;
 }
 
-
-/* style.css */
-
 .btn {
      display: flex;
      margin: 10px;
@@ -178,30 +171,34 @@ body.dark-mode {
      background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
           linear-gradient(to right, #333333 80%, transparent 120%);
      background-size: 20px 20px;
-     /* Adjust the size of the dots */
+}
+
+body.dark-mode .content {
+     background-color: #fff;
+     color: #ffffff;
+     background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
+          linear-gradient(to right, #333333 80%, transparent 120%);
+     background-size: 20px 20px;
+
+}
+
+body.dark-mode .heading {
+     border: 2px solid rgb(255, 255, 255);
+     background-color: #666;
+     color: #fff;
+}
+
+body.dark-mode .heading:hover {
+     box-shadow: -5px 8px 2px rgb(255, 255, 255);
 }
 
 body.dark-mode .project {
      color: #333333;
 }
 
-body.dark-mode .content {
-     background-color: #444;
-     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+body.dark-mode .project:hover {
+     box-shadow: -5px 8px 2px rgb(146, 146, 146);
 }
-
-body.dark-mode .heading {
-     border-color: #ffffff;
-     background-color: #666;
-     color: #fff;
-}
-
-
-body.dark-mode .heading:hover {
-     box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.5);
-}
-
-
 
 body.dark-mode .socialmedia>a>i {
      color: #ffffff;
@@ -219,29 +216,73 @@ body.dark-mode .fa-linkedin:hover {
      color: #0077B5;
 }
 
-
-
-
 /* Media Queries for Responsive Design */
-@media (max-width: 1500px) {
+@media (max-width: 1160px) {
      .content {
           width: 90%;
      }
 
      .project {
           flex: 0 0 calc(50% - 20px);
-          /* Adjust the flex basis for two projects per row */
+     }
+
+     .heading h1 {
+          font-size: 1.5rem;
+     }
+
+     .heading p {
+          font-size: 0.8rem;
      }
 }
 
-/* Additional Media Query for smaller screens, if needed */
 @media (max-width: 768px) {
      .content {
           width: 100%;
      }
 
      .project {
+          flex: 0 0 calc(40% - 20px);
+     }
+
+     .project h2 {
+          font-size: 0.9rem;
+     }
+
+     .project p {
+          font-size: 0.8rem;
+     }
+
+     .heading h1 {
+          font-size: 1.2rem;
+     }
+
+     .heading p {
+          font-size: 0.7rem;
+     }
+}
+
+@media (max-width: 500px) {
+     .content {
+          width: 100%;
+     }
+
+     .project {
           flex: 0 0 calc(100% - 20px);
-          /* Adjust the flex basis for single project per row */
+     }
+
+     .project h2 {
+          font-size: 0.8rem;
+     }
+
+     .project p {
+          font-size: 0.7rem;
+     }
+
+     .heading h1 {
+          font-size: 1rem;
+     }
+
+     .heading p {
+          font-size: 0.6rem;
      }
 }

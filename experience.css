@@ -3,11 +3,9 @@ body {
      font-family: 'Poppins', sans-serif;
      background-color: #e0e0e0;
      color: #333333;
-
      background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
           linear-gradient(to right, #fffdfd 80%, transparent 120%);
      background-size: 20px 20px;
-     /* Adjust the size of the dots */
 
 }
 
@@ -30,7 +28,6 @@ page {
      box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
      max-width: 1000px;
      margin: 0 auto;
-     /* Adjust the width as needed */
      text-align: center;
      position: relative;
      overflow: auto;
@@ -61,30 +58,43 @@ page {
 }
 
 .heading:hover {
-     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+     box-shadow: -5px 8px 2px rgba(0, 0, 0, 1);
 }
 
 .experiences {
      display: flex;
      flex-wrap: wrap;
-     justify-content: flex-start;
+     justify-content: space-evenly;
      margin-top: 20px;
-     align-content: left;
-     align-items: left;
+     align-content: center;
+     align-items: center;
 }
 
 .experience {
      flex: 0 0 calc(40% - 20px);
-     /* Half the available width with some spacing */
      margin: 10px 0;
      padding: 10px;
-     text-align: left;
+     border: 2px solid #000000;
+     background-color: #f5f5f5;
+     border-radius: 5px;
+     text-align: center;
+     box-sizing: border-box;
+     overflow: hidden;
      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-.experience a {
+.experience:hover {
+     transform: translateY(-5px);
+     box-shadow: -5px 8px 2px rgba(0, 0, 0, 1);
+}
 
+.experience h2 {
+     margin-top: 10px;
      text-decoration: underline;
+}
+
+.experience p {
+     margin: 5px 0;
 }
 
 .company-logo {
@@ -134,16 +144,23 @@ body.dark-mode {
      background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
           linear-gradient(to right, #333333 80%, transparent 120%);
      background-size: 20px 20px;
-     /* Adjust the size of the dots */
+}
+
+body.dark-mode .content {
+     background-color: #fff;
+     color: #ffffff;
+     background-image: linear-gradient(to bottom, #333333 80%, transparent 120%),
+          linear-gradient(to right, #333333 80%, transparent 120%);
+     background-size: 20px 20px;
+
 }
 
 body.dark-mode .experience {
      color: #333333;
 }
 
-body.dark-mode .content {
-     background-color: #444;
-     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+body.dark-mode .experience:hover {
+     box-shadow: -5px 8px 2px rgb(146, 146, 146);
 }
 
 body.dark-mode .heading {
@@ -152,12 +169,9 @@ body.dark-mode .heading {
      color: #fff;
 }
 
-
 body.dark-mode .heading:hover {
-     box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.5);
+     box-shadow: -5px 8px 2px rgb(255, 255, 255);
 }
-
-
 
 body.dark-mode .socialmedia>a>i {
      color: #ffffff;
@@ -186,26 +200,15 @@ body.dark-mode .fa-linkedin:hover {
 
      .experience {
           flex: 0 0 calc(50% - 20px);
-          /* Adjust the flex basis for two projects per row */
      }
 }
 
-/* Additional Media Query for smaller screens, if needed */
 @media (max-width: 768px) {
      .content {
           width: 100%;
      }
 
-     .project {
+     .experience {
           flex: 0 0 calc(100% - 20px);
-          /* Adjust the flex basis for single project per row */
-     }
-}
-
-
-
-@media (max-width: 768px) {
-     .content {
-          width: 80%;
      }
 }
