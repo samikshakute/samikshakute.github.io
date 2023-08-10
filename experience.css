@@ -3,10 +3,10 @@ body {
      font-family: 'Poppins', sans-serif;
      background-color: #e0e0e0;
      color: #333333;
+     overflow-x: hidden;
      background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
           linear-gradient(to right, #fffdfd 80%, transparent 120%);
      background-size: 20px 20px;
-
 }
 
 .page {
@@ -18,21 +18,18 @@ body {
      margin: 20px;
 }
 
-
-
 .content {
      background-color: #F0F5FF;
-     /* Light Blue */
+     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
      border-radius: 10px;
      padding: 25px;
-     box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
      max-width: 1000px;
      margin: 0 auto;
+     /* Adjust the width as needed */
      text-align: center;
      position: relative;
      overflow: auto;
 }
-
 
 .toggle-container {
      position: absolute;
@@ -67,7 +64,7 @@ body {
      justify-content: space-evenly;
      margin-top: 20px;
      align-content: center;
-     align-items: center;
+     
 }
 
 .experience {
@@ -79,7 +76,6 @@ body {
      border-radius: 5px;
      text-align: center;
      box-sizing: border-box;
-     overflow: hidden;
      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
@@ -88,19 +84,10 @@ body {
      box-shadow: -5px 8px 2px rgba(0, 0, 0, 1);
 }
 
-.experience h2 {
-     margin-top: 10px;
-     text-decoration: underline;
+.experience img {
+     width: 100%;
+     object-fit: cover;
 }
-
-.experience p {
-     margin: 5px 0;
-}
-
-.company-logo {
-     width: 80px;
-}
-
 
 .socialmedia {
      margin: 15px;
@@ -136,8 +123,6 @@ a {
      color: #000000;
 }
 
-
-
 body.dark-mode {
      background-color: #fff;
      color: #ffffff;
@@ -155,22 +140,22 @@ body.dark-mode .content {
 
 }
 
-body.dark-mode .experience {
-     color: #333333;
-}
-
-body.dark-mode .experience:hover {
-     box-shadow: -5px 8px 2px rgb(146, 146, 146);
-}
-
 body.dark-mode .heading {
-     border-color: #ffffff;
+     border: 2px solid rgb(255, 255, 255);
      background-color: #666;
      color: #fff;
 }
 
 body.dark-mode .heading:hover {
      box-shadow: -5px 8px 2px rgb(255, 255, 255);
+}
+
+body.dark-mode .experience {
+     color: #333333;
+}
+
+body.dark-mode .experience:hover {
+     box-shadow: -5px 8px 2px rgb(146, 146, 146);
 }
 
 body.dark-mode .socialmedia>a>i {
@@ -189,17 +174,22 @@ body.dark-mode .fa-linkedin:hover {
      color: #0077B5;
 }
 
-
-
-
 /* Media Queries for Responsive Design */
-@media (max-width: 1500px) {
+@media (max-width: 1160px) {
      .content {
           width: 90%;
      }
 
      .experience {
           flex: 0 0 calc(50% - 20px);
+     }
+
+     .heading h1 {
+          font-size: 1.5rem;
+     }
+
+     .heading p {
+          font-size: 0.8rem;
      }
 }
 
@@ -209,6 +199,48 @@ body.dark-mode .fa-linkedin:hover {
      }
 
      .experience {
+          flex: 0 0 calc(40% - 20px);
+     }
+
+     .experience h2 {
+          font-size: 0.9rem;
+     }
+
+     .experience p {
+          font-size: 0.8rem;
+     }
+
+     .heading h1 {
+          font-size: 1.2rem;
+     }
+
+     .heading p {
+          font-size: 0.7rem;
+     }
+}
+
+@media (max-width: 500px) {
+     .content {
+          width: 100%;
+     }
+
+     .experience {
           flex: 0 0 calc(100% - 20px);
+     }
+
+     .experience h2 {
+          font-size: 0.8rem;
+     }
+
+     .experience p {
+          font-size: 0.7rem;
+     }
+
+     .heading h1 {
+          font-size: 1rem;
+     }
+
+     .heading p {
+          font-size: 0.6rem;
      }
 }
