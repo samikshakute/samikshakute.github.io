@@ -1,0 +1,3 @@
+[submodule "linux-documentation"]
+	path = linux-documentation
+	url = https://github.com/samikshakute/linux-documentation.git
