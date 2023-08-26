@@ -52,7 +52,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-
 .toggle-container {
   position: absolute;
   top: 10px;
@@ -295,6 +294,11 @@ body.dark-mode .fa-linkedin:hover {
     width: 90%;
   }
 
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+
   .item {
     flex: 0 0 calc(33.33% - 20px);
   }
@@ -311,6 +315,11 @@ body.dark-mode .fa-linkedin:hover {
 @media (max-width: 768px) {
   .content {
     width: 100%;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
   }
 
   .item {
@@ -339,6 +348,11 @@ body.dark-mode .fa-linkedin:hover {
 }
 
 @media (max-width: 500px) {
+  .profile-image img {
+    width: 80px;
+    height: 80px;
+  }
+
   .item {
     width: 100%;
     flex: 0 0 100%;
