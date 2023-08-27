@@ -19,8 +19,6 @@ body {
      margin: 20px;
 }
 
-
-
 .content {
      background-color: #F0F5FF;
      /* Light Blue */
@@ -34,7 +32,6 @@ body {
      overflow: auto;
 }
 
-
 .toggle-container {
      position: absolute;
      top: 10px;
@@ -45,7 +42,18 @@ body {
 .toggle-container i {
      font-size: 24px;
      cursor: pointer;
-     transition: color 0.3s;
+     transition: transform 0.3s ease;
+     animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     50% {
+          transform: rotate(-60deg);
+     }
 }
 
 .heading {
@@ -199,13 +207,13 @@ body.dark-mode .fa-linkedin:hover {
 
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1160px) {
+@media (max-width: 400px) {
      .content {
           width: 90%;
      }
 
      .skill {
-          flex: 0 0 calc(33.33% - 20px);
+          flex: 0 0 calc(40% - 20px);
      }
 
      .heading h1 {
@@ -217,13 +225,14 @@ body.dark-mode .fa-linkedin:hover {
      }
 }
 
+/* 
 @media (max-width: 768px) {
      .content {
-          width: 100%;
+          width: 80%;
      }
 
      .skill {
-          flex: 0 0 calc(50% - 20px);
+          flex: 0 0 calc(40% - 20px);
      }
 
      .skill h2 {
@@ -245,12 +254,66 @@ body.dark-mode .fa-linkedin:hover {
      .heading p {
           font-size: 0.7rem;
      }
-}
+} */
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
      .skill {
           width: 100%;
-          flex: 0 0 100%;
+          flex: 0 0 calc(25% - 10px);
+     }
+
+     .skill h2 {
+          font-size: 0.8rem;
+     }
+
+     .skill p {
+          font-size: 0.7rem;
+     }
+
+     .skill i {
+          font-size: 1.2rem;
+     }
+
+     .heading h1 {
+          font-size: 1rem;
+     }
+
+     .heading p {
+          font-size: 0.6rem;
+     }
+}
+
+@media (max-width: 400px) {
+     .skill {
+          width: 100%;
+          flex: 0 0 calc(30% - 10px);
+     }
+
+     .skill h2 {
+          font-size: 0.8rem;
+     }
+
+     .skill p {
+          font-size: 0.7rem;
+     }
+
+     .skill i {
+          font-size: 1.2rem;
+     }
+
+     .heading h1 {
+          font-size: 1rem;
+     }
+
+     .heading p {
+          font-size: 0.6rem;
+     }
+}
+
+@media (max-width: 320px) {
+     .skill {
+          width: 100%;
+          flex: 0 0 calc(100%);
      }
 
      .skill h2 {

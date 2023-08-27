@@ -71,20 +71,8 @@ body {
     transform: rotate(0deg);
   }
 
-  25% {
-    transform: rotate(10deg);
-  }
-
   50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(-10deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
+    transform: rotate(-60deg);
   }
 }
 
@@ -283,32 +271,32 @@ body.dark-mode .fa-linkedin:hover {
 
 .item:nth-child(1) {
   background-color: #FFE082;
-  color: #333333;
+  color: #000;
 }
 
 .item:nth-child(2) {
   background-color: #87d08b;
-  color: #333333;
+  color: #000;
 }
 
 .item:nth-child(3) {
   background-color: #90CAF9;
-  color: #333333;
+  color: #000;
 }
 
 .item:nth-child(4) {
   background-color: #FFAB91;
-  color: #333333;
+  color: #000;
 }
 
 .item:nth-child(5) {
   background-color: #B39DDB;
-  color: #333333;
+  color: #000;
 }
 
 /* .item:nth-child(6) {
   background-color: #FFCC80;
-  color: #333333;
+  color: #000;
 } */
 
 /* Media Queries for Responsive Design */

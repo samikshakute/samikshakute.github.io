@@ -2,7 +2,7 @@ body {
      margin: 0;
      font-family: 'Poppins', sans-serif;
      background-color: #e0e0e0;
-     color: #333333;
+     color: #000;
      overflow-x: hidden;
      background-image: linear-gradient(to bottom, #ffffff 80%, transparent 120%),
           linear-gradient(to right, #fffdfd 80%, transparent 120%);
@@ -41,7 +41,18 @@ body {
 .toggle-container i {
      font-size: 24px;
      cursor: pointer;
-     transition: color 0.3s;
+     transition: transform 0.3s ease;
+     animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+     0% {
+          transform: rotate(0deg);
+     }
+
+     50% {
+          transform: rotate(-60deg);
+     }
 }
 
 .heading {
