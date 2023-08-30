@@ -1,7 +1,8 @@
 # samikshakute.github.io
 My personal website repository.
 
-![Docker Image](https://img.shields.io/badge/Docker%20Image-ghcr.io%2Fsamikshakute%2Fportfolio--app-blue)
+[![Docker Image](https://img.shields.io/badge/Docker%20Image-ghcr.io%2Fsamikshakute%2Fportfolio--app-blue)](https://github.com/samikshakute/samikshakute.github.io/pkgs/container/portfolio-app)
+
 
 ## Running the Containerized Portfolio Locally
 
