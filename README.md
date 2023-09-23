@@ -18,13 +18,16 @@ To run my portfolio locally using Docker, follow these steps:
 3. **Run the Container:** Start a Docker container with the following command:
 
    ```bash
-   docker run -d -p 8080:80 ghcr.io/samikshakute/portfolio-app:latest
+   docker run -d -p 8000:80 ghcr.io/samikshakute/portfolio-app:latest
 
-4. **Access the Portfolio:** Open your web browser and navigate to http://localhost:8080 to view your containerized portfolio.
+4. **Access the Portfolio:** Open your web browser and navigate to http://localhost:8000 to view your containerized portfolio.
 5. **Stop the Container:** When you're done, you can stop the container using the following command:
    ```bash
    docker stop CONTAINER_ID
   Replace CONTAINER_ID with the actual container ID (you can find it using docker ps).
   
+
+## Feedback and Contributions
+I welcome any feedback or suggestions you may have about my portfolio. If you encounter any issues while running the container or have ideas for improvements, feel free to open an issue or submit a pull request. Your contributions are greatly appreciated!
 
 
